@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+.circle {
+    width: 18px;
+    height: 18px;
+	margin-left:5px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 18px;
+    text-align: center;
+    background: #ffcc00;
+    position: relative;
+    z-index: 1;
+  }
+
+ 
+ .animate {
+  width: 18px;
+  height: 18px;
+  background-color: #ffcc00;
+  animation-name: example;
+  animation-duration: 6s;
+}
+
+@keyframes example {
+  from {background-color: green;}
+  to {background-color: red;}
+}
+
+.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

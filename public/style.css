@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #9c3636;
+	font-family: Montserrat, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #000000;
+	padding-top: 30px;
+	position: relative;
+	min-width: 326px;
+	width: 600px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container .pro {
+	color: #231E39;
+	background-color: #ffffff;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.card-container .round {
+	border: 1px solid #037bcb;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #cb0303;
+	border: 1px solid #037bcb;
+	border-radius: 20px;
+	color: #ffffff;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	padding: 10px 25px;
+	
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+.skills {
+	background-color: #037bcb;
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #f3f3f3;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+	font-weight: 500;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
+
+table {
+	border: 1px solid rgb(243, 242, 242);
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+  }
+  
+  table caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+  }
+  
+  table tr {
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	padding: .35em;
+  }
+  
+  table th,
+  table td {
+	padding: .625em;
+	text-align: center;
+  }
+  
+  table th {
+	font-size: .85em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+	table {
+	  border: 0;
+	}
+  
+	table caption {
+	  font-size: 1.3em;
+	}
+	
+	table thead {
+	  border: none;
+	  clip: rect(0 0 0 0);
+	  height: 1px;
+	  margin: -1px;
+	  overflow: hidden;
+	  padding: 0;
+	  position: absolute;
+	  width: 1px;
+	}
+	
+	table tr {
+	  border-bottom: 3px solid #ddd;
+	  display: block;
+	  margin-bottom: .625em;
+	}
+	
+	table td {
+	  border-bottom: 1px solid #ddd;
+	  display: block;
+	  font-size: .8em;
+	  text-align: right;
+	}
+	
+	table td::before {
+	  /*
+	  * aria-label has no advantage, it won't be read inside a table
+	  content: attr(aria-label);
+	  */
+	  content: attr(data-label);
+	  float: left;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	}
+	
+	table td:last-child {
+	  border-bottom: 0;
+	}
+  }
+  
